@@ -8,8 +8,8 @@ import {TransferenciaComponent} from "./transferencia/transferencia.component";
 export const routes:Routes=[
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent},
-  //{path:'estudiante/:idestudiante',component:ProfesorComponent},
-  //{path:'estudiante/:idestudiante/:materia/:idmateria',component:EstudianteComponent},
+  {path:'estudiante/:idestudiante',component:EstudianteComponent},
+  {path:'estudiante/:idestudiante/:materia/:idmateria',component:ProfesorComponent},
   //{path:'transferencias',component:TransferenciaComponent},
 
 ];
