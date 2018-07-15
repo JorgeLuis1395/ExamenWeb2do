@@ -12,7 +12,7 @@ export const routes:Routes=[
   {path:'home',component:HomeComponent},
   {path:'estudiante/:idestudiante',component:EstudianteComponent},
   {path:'estudiante/:idestudiante/:materia/:idmateria',component:ProfesorComponent},
-  //{path:'transferencias',component:TransferenciaComponent},
+  {path:'transferencias',component:TransferenciaComponent},
 
 ];
 export const routing:ModuleWithProviders=RouterModule.forRoot(routes);

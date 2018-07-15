@@ -97,6 +97,7 @@ export class HomeComponent implements OnInit {
     for (var i = 0; i < this.materias.length; i++) {
       this.arrayNombresMaterias.push(this.materias[i].nombre);
     }
+
   }
 
 

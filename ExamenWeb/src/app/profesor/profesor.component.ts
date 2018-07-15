@@ -8,43 +8,45 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./profesor.component.css']
 })
 export class ProfesorComponent implements OnInit {
-  materia=[];
+  estudiante;
+  materia;
   _parametros:any;
-
-  nombre:string;
-  estado: boolean;
   constructor(private _httpClient: HttpClient, private _activetedRoute:ActivatedRoute) { }
 
   ngOnInit() {
+    this.cargarEstudiante();
     this.cargarMateria();
   }
   cargarMateria(){
     this._activetedRoute.params.subscribe(parametros=>{
       this._parametros=parametros;
-      this._httpClient.get('http://localhost:3000/materia/mostrarMateria?id_materia='+this._parametros.id_materia)
+      this._httpClient.get('http://localhost:3000/materia/mostrarMateria?estudianteIdIdEstudiante='+this._parametros.idequipo)
         .subscribe(
-          (res:any[])=>{
+          (res)=>{
             this.materia=res;
             console.log(this.materia);
-            console.log(this.materia[0].nombre);
-            //this.estado=this._compras.buscarJugadores(this.jugador[0].id,this.jugador[0].equipoIDFK.id);
-            console.log(this.materia[0].codigo);
-           // console.log(this._compras.getJugadores());
           },
           (err)=>{
             console.log(err);
           }
         )
-
-
     });
   }
 
-  transferirMateria(){
-    //this._compras.ingresarJugadores(this.jugador);
-    //this._compras.actualizarTamanio();
-    //console.log(this._compras)
+  cargarEstudiante(){
+    this._activetedRoute.params.subscribe(parametros=>{
+      this._parametros=parametros;
+      this._httpClient.get('http://localhost:3000/Estudiante/mostrarEstudiante?id='+this._parametros.idequipo)
+        .subscribe(
+          (res)=>{
+            this.estudiante=res;
+            console.log(this.estudiante);
+          },
+          (err)=>{
+            console.log(err);
+          }
+        )
+    });
   }
-
 
 }

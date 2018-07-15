@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f93c75ae-2630-45a4-9caf-0d023b7a2f3b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,36 +26,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/login/login.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="974">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="117" column="145" selection-start-line="117" selection-start-column="145" selection-end-line="117" selection-end-column="145" />
+            <state relative-caret-position="2388">
+              <caret line="63" column="102" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="102" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
@@ -64,11 +48,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/login/login.component.ts">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="494">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="estudiante.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="49" column="131" selection-start-line="49" selection-start-column="131" selection-end-line="49" selection-end-column="131" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="estudiante.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="51" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="51" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -76,14 +78,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav-bar.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/nav-bar/nav-bar.component.ts">
+      <file leaf-file-name="profesor.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="522">
+              <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profesor.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1110">
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.routes.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/app.routes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -91,52 +111,11 @@
       <file leaf-file-name="home.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="531">
+              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autorizacion.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/servicios/autorizacion.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="credenciales.service.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/servicios/credenciales.service.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="credenciales.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/servicios/credenciales.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -174,29 +153,29 @@
         <option value="$PROJECT_DIR$/Examen/project/src/main.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/ExamenWeb/src/index.html" />
         <option value="$PROJECT_DIR$/Examen/project/src/materia/materia.entity.ts" />
         <option value="$PROJECT_DIR$/Examen/project/src/materia/materia.controller.ts" />
         <option value="$PROJECT_DIR$/Examen/project/src/materia/materia.data.ts" />
         <option value="$PROJECT_DIR$/Examen/project/src/materia/materia.schema.ts" />
         <option value="$PROJECT_DIR$/Examen/project/src/materia/materia.service.ts" />
-        <option value="$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.html" />
-        <option value="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.css" />
-        <option value="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.ts" />
-        <option value="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.html" />
         <option value="$PROJECT_DIR$/Examen/project/src/estudiante/estudiante.schema.ts" />
         <option value="$PROJECT_DIR$/Examen/project/src/estudiante/estudiante.controller.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/login/login.component.css" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.ts" />
-        <option value="$PROJECT_DIR$/ExamenWeb/src/app/app.routes.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/nav-bar/nav-bar.component.html" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/nav-bar/nav-bar.component.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/servicios/credenciales.service.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.ts" />
         <option value="$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.css" />
+        <option value="$PROJECT_DIR$/ExamenWeb/src/index.html" />
+        <option value="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.ts" />
+        <option value="$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.html" />
+        <option value="$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.html" />
+        <option value="$PROJECT_DIR$/ExamenWeb/src/app/app.routes.ts" />
       </list>
     </option>
   </component>
@@ -376,7 +355,7 @@
               <item name="ExamenWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="estudiante" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExamenWeb2do" type="b2602c69:ProjectViewProjectNode" />
@@ -384,7 +363,7 @@
               <item name="ExamenWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="profesor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -444,15 +423,15 @@
       <workItem from="1531605567943" duration="3008000" />
       <workItem from="1531608652021" duration="1546000" />
       <workItem from="1531610241940" duration="27942000" />
-      <workItem from="1531662124812" duration="13068000" />
+      <workItem from="1531662124812" duration="19961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53738000" />
+    <option name="totallyTimeSpent" value="60631000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1328" y="23" width="1109" height="1337" extended-state="0" />
+    <frame x="1454" y="46" width="1109" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -514,13 +493,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Examen/project/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examen/project/src/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -638,13 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="14" selection-start-line="14" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examen/project/src/materia/materia.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1184">
@@ -685,30 +650,6 @@
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -760,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -780,23 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -889,24 +806,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="117" column="145" selection-start-line="117" selection-start-column="145" selection-end-line="117" selection-end-column="145" />
+        <state relative-caret-position="2388">
+          <caret line="63" column="102" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="102" />
           <folding>
             <element signature="n#div#1;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
@@ -916,6 +823,74 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="51" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/estudiante/estudiante.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="49" column="131" selection-start-line="49" selection-start-column="131" selection-end-line="49" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/profesor/profesor.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExamenWeb/src/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
