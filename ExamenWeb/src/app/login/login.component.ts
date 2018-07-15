@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
     else {
       const rutaHomeUsuario = [
         '/login',
+
       ];
       this._router.navigate(rutaHomeUsuario);
     }
