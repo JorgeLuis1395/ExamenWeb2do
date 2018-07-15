@@ -30,6 +30,7 @@ export class MateriaService {
         mat.activo = materia.activo;
         mat.fechaCreacion = new Date(materia.fechaCreacion);
         mat.numeroHorasSemana = materia.numeroHorasSemana;
+        mat.urlFotoMateria = materia.urlFotoMateria;
         mat.estudianteId = materia.estudianteIdIdEstudiante;
 
         this.materiaRepository.save(mat);
@@ -43,6 +44,7 @@ export class MateriaService {
             mat.descripcion = MateriaData[indice].descripcion;
             mat.activo = MateriaData[indice].activo;
             mat.fechaCreacion = new Date(MateriaData[indice].fechaCreacion);
+            mat.urlFotoMateria = MateriaData[indice].urlFotoMateria;
             mat.numeroHorasSemana = parseInt(MateriaData[indice].numeroHorasSemana);
             mat.estudianteId = parseInt(MateriaData[indice].estudianteIdIdEstudiante);
 
@@ -58,7 +60,7 @@ export class MateriaService {
     }
 
     //Metodo editar un medicamento
-    editarUno(materiaID, codigo, nombre, descripcion, activo, fechaCreacion, numeroHorasSemana, estudianteId){
+    editarUno(materiaID, codigo, nombre, descripcion, activo, fechaCreacion, numeroHorasSemana,urlFotoMateria, estudianteId){
         let materiaActualizado = this.obtenerUno(materiaID);
 
         materiaActualizado.codigo = codigo;
@@ -67,6 +69,7 @@ export class MateriaService {
         materiaActualizado.activo = activo;
         materiaActualizado.fechaCreacion = fechaCreacion;
         materiaActualizado.numeroHorasSemana = numeroHorasSemana;
+        materiaActualizado.urlFotoMateria = urlFotoMateria;
         materiaActualizado.estudianteIdIdEstudiante = estudianteId;
 
         return materiaActualizado;
@@ -83,6 +86,7 @@ export class Materia {
         public activo:string,
         public fechaCreacion:string,
         public numeroHorasSemana:number,
+        public urlFotoMateria:string,
         public estudianteIdIdEstudiante:number,
     ){};
 }

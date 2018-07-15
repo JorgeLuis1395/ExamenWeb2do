@@ -81,9 +81,6 @@ export class HomeComponent implements OnInit {
           console.log('COMPLETO!')
         }
       );
-
-
-
   }
   llenarUsuarios(){
     for (var i = 0; i < this.usuarios.length; i++) {
@@ -92,7 +89,7 @@ export class HomeComponent implements OnInit {
   }
   llenarEstudiantes(){
     for (var i = 0; i < this.estudiantes.length; i++) {
-      this.arrayNombresEstudiantes.push(this.estudiantes[i].nombre);
+      this.arrayNombresEstudiantes.push(this.estudiantes[i].nombres);
     }
   }
 
@@ -101,6 +98,7 @@ export class HomeComponent implements OnInit {
       this.arrayNombresMaterias.push(this.materias[i].nombre);
     }
   }
+
 
 
 

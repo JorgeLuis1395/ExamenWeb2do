@@ -1,5 +1,5 @@
 export const MateriaData = [
-    {'codigo':500,'nombre':'Ibuprofeno','descripcion':'croscarmelosa de sodio','activo':'analgesico, dolor','fechaCreacion':'2018-08-08','numeroHorasSemana':'10','estudianteIdIdEstudiante':'1'},
+    {'codigo':500,'nombre':'Ibuprofeno','descripcion':'croscarmelosa de sodio','activo':'analgesico, dolor','fechaCreacion':'2018-08-08','numeroHorasSemana':'10','urlFotoMateria':'','estudianteIdIdEstudiante':'1'},
     {'codigo':10,'nombre':'Omeprazol','descripcion':'hidroxipropilcelulosa','activo':'acidez estomago','fechaCreacion':'2018-08-08','numeroHorasSemana':'5','estudianteIdIdEstudiante':'1'},
     {'codigo':20,'nombre':'Paracetamol','descripcion':'Povidona','activo':'aliviar dolor','fechaCreacion':'2018-08-08','numeroHorasSemana':'8','estudianteIdIdEstudiante':'1'},
     {'codigo':500,'nombre':'Amoxicilina','descripcion':'Lactosa Monohidrato','activo':'antibiotico','fechaCreacion':'2018-08-08','numeroHorasSemana':'10','estudianteIdIdEstudiante':'1'},

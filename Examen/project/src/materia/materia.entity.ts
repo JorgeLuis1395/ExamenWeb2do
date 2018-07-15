@@ -18,7 +18,8 @@ export class MateriaEntity {
     fechaCreacion: Date;
     @Column()
     numeroHorasSemana: number;
-
+    @Column()
+    urlFotoMateria: string;
 
     @ManyToOne(
         type => EstudianteEntity,

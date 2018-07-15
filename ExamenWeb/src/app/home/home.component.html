@@ -23,12 +23,11 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h3>Usuario:</h3>
-        <hr class="my-4">
+        <hr class="my-3">
         <div class="row">
-
           <div class="col-sm-4" *ngFor=" let nombre of arrayNombresUsuarios | search: searchText; let indice=index ">
             <div *ngFor="let usuario of usuarios">
-              <div *ngIf="usuario.nombre_usuario==nombre && indice<=6">
+              <div *ngIf="usuario.nombre_usuario==nombre && indice<=2">
                 <div class="card" [routerLink]="['/usuario',usuarios.id_usuario]">
                   <div align="center" height="200" width="200"><img class="card-img-top img-fluid" style="width: 50%"
                                            [src]="usuario.urlFoto" height="200" width="200" alt="Card image cap"></div>
@@ -40,13 +39,13 @@
               </div>
             </div>
           </div>
+        </div>
           <div id="demo" class="collapse">
-
-
-            <div class="col-sm-4"
+            <div class="row">
+          <div class="col-sm-4"
                  *ngFor=" let nombre of arrayNombresUsuarios | search: searchText; let indice=index ">
               <div *ngFor="let usuario of usuarios">
-                <div *ngIf="usuario.nombre_usuario==nombre && indice>6">
+                <div *ngIf="usuario.nombre_usuario==nombre && indice>2">
                   <div class="card" [routerLink]="['/usuario',usuarios.id_usuario]">
                     <div align="center"><img class="card-img-top img-fluid" style="width: 50%"
                                              [src]="usuario.urlFoto" alt="Card image cap"></div>
@@ -57,17 +56,132 @@
               </div>
             </div>
           </div>
+          </div>
 
           <div class="col-sm-12"><br></div>
-          <div class="col-sm 12" align="center" *ngIf="arrayNombresEstudiantes.length>6">
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Cargar mas</button>
+          <div class="col-sm-12" align="center" *ngIf="arrayNombresUsuarios.length>2">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-3"><button class="boton1" type="button" class="btn btn-info"  data-toggle="collapse" data-target="#demo" disabled >Anterior</button></div>
+              <div class="col-sm-5"></div>
+              <div class="col-sm-3"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Siguiente</button></div>
+            </div>
           </div>
 
         </div>
       </div>
-
     </div>
 
+  <div class="col-sm-12">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h3>Estudiantes:</h3>
+        <hr class="my-3">
+        <div class="row">
+          <div class="col-sm-4" *ngFor=" let nombre of arrayNombresEstudiantes | search: searchText; let indice=index ">
+            <div *ngFor="let estudiante of estudiantes">
+              <div align="center" *ngIf="estudiante.nombres==nombre && indice<=2">
+                <div class="card" [routerLink]="['/estudiante',estudiante.id_estudiante]">
+                  <div align="center" ><img class="card-img-top img-fluid" style="width: 50%" [src]="estudiante.urlFotoEstudiante" height="200" width="200" alt="Card image cap"></div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">{{estudiante.nombres}} {{estudiante.apellidos}}
+                    </h5>
+                    <p class="card-text">Semestre Actual: {{estudiante.semestreActual}}</p>
+                    <p class="card-text">Graduado: {{estudiante.graduado}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="demo1" class="collapse">
+          <div class="row">
+            <div class="col-sm-4"
+                 *ngFor=" let nombres of arrayNombresEstudiantes | search: searchText; let indice=index ">
+              <div *ngFor="let estudiante of estudiantes">
+                <div *ngIf="estudiante.nombres==nombres && indice>5">
+                  <div class="card" [routerLink]="['/estudiante',estudiante.id_estudiante]">
+                    <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]="estudiante.urlFotoEstudiante" alt="Card image cap"></div>
+
+                    <h5 class="card-title" style="text-align: center">{{estudiante.nombres}} {{estudiante.apellidos}} </h5>
+                    <p class="card-text">Semestre Actual: {{estudiante.semestreActual}}</p>
+                    <p class="card-text">Graduado: {{estudiante.graduado}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12"><br></div>
+        <div class="col-sm-12" align="center" *ngIf="arrayNombresEstudiantes.length>3">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3"><button class="boton1" type="button" class="btn btn-info"  data-toggle="collapse" data-target="#demo1" disabled >Anterior</button></div>
+            <div class="col-sm-5"></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Siguiente</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h3>Materias:</h3>
+        <hr class="my-3">
+        <div class="row">
+          <div class="col-sm-4" *ngFor=" let nombre of arrayNombresUsuarios | search: searchText; let indice=index ">
+            <div *ngFor="let usuario of usuarios">
+              <div *ngIf="usuario.nombre_usuario==nombre && indice<=2">
+                <div class="card" [routerLink]="['/usuario',usuarios.id_usuario]">
+                  <div align="center" height="200" width="200"><img class="card-img-top img-fluid" style="width: 50%"
+                                                                    [src]="usuario.urlFoto" height="200" width="200" alt="Card image cap"></div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">{{usuario.nombre_usuario}}
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="demo2" class="collapse">
+          <div class="row">
+            <div class="col-sm-4"
+                 *ngFor=" let nombre of arrayNombresMaterias | search: searchText; let indice=index ">
+              <div *ngFor="let materia of materias">
+                <div *ngIf="materia.nombre==nombre && indice>2">
+                  <div class="card" [routerLink]="['/materia',materia.id_materia]">
+                    <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]="materia.urlFotoMateria" alt="Card image cap"></div>
+
+                    <h5 class="card-title" style="text-align: center">{{materia.codigo}} </h5>
+                    <p class="card-title">Nombre: {{materia.nombre}}</p>
+                    <p class="card-title">Descripcion: {{materia.nombre}}</p>
+                    <p class="card-title">Numero Horas: {{materia.numeroHorasSemana}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12"><br></div>
+        <div class="col-sm-12" align="center" *ngIf="arrayNombresUsuarios.length>2">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3"><button class="boton1" type="button" class="btn btn-info"  data-toggle="collapse" data-target="#demo" disabled >Anterior</button></div>
+            <div class="col-sm-5"></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Siguiente</button></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
+
 </div>
+
+
+

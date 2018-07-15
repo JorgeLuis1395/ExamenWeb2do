@@ -20,6 +20,7 @@ export class MateriaController {
             bodyParams.activo,
             bodyParams.fechaCreacion,
             bodyParams.numeroHorasSemana,
+            bodyParams.urlFotoMateria,
             bodyParams.estudianteIdIdEstudiante,
         );
 
@@ -79,6 +80,7 @@ export class MateriaController {
                     body.activo,
                     body.fechaCreacion,
                     body.numeroHorasSemana,
+                    body.urlFotoMateria,
                     body.materiaId,
                 ));
         } else{
