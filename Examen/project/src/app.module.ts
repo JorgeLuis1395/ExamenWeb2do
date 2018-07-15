@@ -16,20 +16,15 @@ import {UsuarioController} from "./usuario/usuario.controller";
 @Module({
   imports: [TypeOrmModule.forRoot({
         type: 'mysql',
-        host: 'web2018aexamen.mysql.database.azure.com',
+        host: 'web2018examen.mysql.database.azure.com',
         port: 3306,
-        username: 'KevinDB@web2018aexamen',
+        username: 'JorgeCarrillo@web2018examen',
         password: 'Web2018A',
         database: 'WebExamen',
         entities: [__dirname + '/../**/*.entity{.ts,.js}'],
         synchronize: true,
         ssl: true
       }),
-
-      /*TypeOrmModule.forFeature([UsuarioEntity,], 'userConnection'),
-      TypeOrmModule.forFeature([EstudianteEntity,],'patientConnection'),
-      TypeOrmModule.forFeature([MateriaEntity,],'medicineConnection'),
-       */
       TypeOrmModule.forFeature([
           EstudianteEntity,
           UsuarioEntity,

@@ -1,4 +1,4 @@
-import {Component} from "@nestjs/common";
+import {Injectable} from "@nestjs/common";
 import {InjectRepository} from "@nestjs/typeorm";
 import {Repository} from "typeorm";
 import {EstudianteEntity} from "./estudiante.entity";
@@ -7,7 +7,7 @@ import {UsuarioEntity} from "../usuario/usuario.entity";
 import {EstudianteData} from "./estudiante.data";
 import {MateriaEntity} from "../materia/materia.entity";
 
-@Component()
+@Injectable()
 
 export class EstudianteService {
 

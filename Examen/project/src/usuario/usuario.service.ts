@@ -1,11 +1,11 @@
-import {Component, Req, Res} from "@nestjs/common";
+import {Injectable, Req, Res} from "@nestjs/common";
 import {InjectConnection, InjectEntityManager, InjectRepository} from "@nestjs/typeorm";
 import {Connection, EntityManager, Repository} from "typeorm";
 import {UsuarioEntity} from "./usuario.entity";
 import {UsuarioData} from "./usuario.data";
 import {Estudiante} from "../estudiante/estudiante.service";
 
-@Component()
+@Injectable()
 export class UsuarioService {
 
 

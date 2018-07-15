@@ -1,11 +1,11 @@
-import {Component} from "@nestjs/common";
+import {Injectable} from "@nestjs/common";
 import {InjectRepository} from "@nestjs/typeorm";
 import {MateriaEntity} from "./materia.entity";
 import {Repository} from "typeorm";
 import {EstudianteEntity} from "../estudiante/estudiante.entity";
 import {MateriaData} from "./materia.data";
 
-@Component()
+@Injectable()
 export class MateriaService {
 
     constructor(
