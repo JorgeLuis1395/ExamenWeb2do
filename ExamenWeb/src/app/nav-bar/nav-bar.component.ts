@@ -12,8 +12,7 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   // this.nombre=this._usuario.getUsuario()[0].nombre;
-    console.log(this.indice)
+
   }
 
 

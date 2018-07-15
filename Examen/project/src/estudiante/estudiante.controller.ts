@@ -31,7 +31,7 @@ export  class EstudianteController {
         return response.status(202).send('Estudiantes Creados');
     }
 
-    @Get('mostrarEstudiantes')
+    @Get('mostrarEstudiante')
     listarTodosLosEstudiantes(@Res () response, @Req () request){
         var promise = Promise.resolve(this.estudianteService.listarEstudiante());
         promise.then(function (value) {
