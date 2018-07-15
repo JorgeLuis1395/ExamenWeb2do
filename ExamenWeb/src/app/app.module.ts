@@ -11,6 +11,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import {FormsModule} from "@angular/forms";
 import {routing} from "./app.routes";
 import {SearchPipe} from "./pipes/search.pipe";
+import {AutorizacionService} from "./servicios/autorizacion.service";
+import {CredencialesService} from "./servicios/credenciales.service";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import {SearchPipe} from "./pipes/search.pipe";
     routing
 
   ],
-  providers: [],
+  providers: [AutorizacionService, CredencialesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -21,14 +21,14 @@ export class ProfesorComponent implements OnInit {
   cargarMateria(){
     this._activetedRoute.params.subscribe(parametros=>{
       this._parametros=parametros;
-      this._httpClient.get('http://localhost:1337/jugador?id='+this._parametros.id_materia)
+      this._httpClient.get('http://localhost:3000/materia/mostrarMateria?id_materia='+this._parametros.id_materia)
         .subscribe(
           (res:any[])=>{
             this.materia=res;
             console.log(this.materia);
             console.log(this.materia[0].nombre);
             //this.estado=this._compras.buscarJugadores(this.jugador[0].id,this.jugador[0].equipoIDFK.id);
-            console.log(this.estado);
+            console.log(this.materia[0].codigo);
            // console.log(this._compras.getJugadores());
           },
           (err)=>{

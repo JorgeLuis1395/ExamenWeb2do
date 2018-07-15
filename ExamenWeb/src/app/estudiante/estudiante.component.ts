@@ -35,7 +35,7 @@ export class EstudianteComponent implements OnInit {
   cargarEstudiante(){
     this._activetedRoute.params.subscribe(parametros=>{
       this._parametros=parametros;
-      this._httpClient.get('http://localhost:3000/Estudiante/mostrarEstudiantes?id='+this._parametros.idequipo)
+      this._httpClient.get('http://localhost:3000/Estudiante/mostrarEstudiante?id='+this._parametros.idequipo)
         .subscribe(
           (res)=>{
             this.estudiante=res;

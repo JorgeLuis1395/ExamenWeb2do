@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CredencialesService} from "../servicios/credenciales.service";
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   indice:number;
-  nombre:string;
+  usuario:string;
 
-  constructor() { }
+  constructor(private _usuario: CredencialesService) { }
 
   ngOnInit() {
-
+    this.usuario=this._usuario.usuario1;
   }
 
 

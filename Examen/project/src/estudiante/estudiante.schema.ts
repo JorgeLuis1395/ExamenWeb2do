@@ -7,6 +7,6 @@ export const ESTUDIANTE_SCHEMA = Joi
         fechaNacimiento:Joi.date().required(),
         semestreActual:Joi.number().integer().min(0).max(8).required(),
         graduado:Joi.boolean().required(),
-        urlFotoEstudiante: Joi.string().regex(/^[a-zA-Z0-9.,' ' ]{4,300}$/).required(),
+        urlFotoEstudiante: Joi.string(),
         usuarioFKIdUsuario: Joi.number().integer().required(),
     });

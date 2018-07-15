@@ -51,7 +51,7 @@ export  class EstudianteController {
     @Get('/:id')
     mostrarEstudiante(@Res () response, @Req () request, @Param() params){
 
-        let arregloEstudiante = this.estudianteService.obtenerUno(params.id);
+        let arregloEstudiante = this.estudianteService.obtenerUno(params.id_estudiante);
         if(arregloEstudiante){
             return response.send(arregloEstudiante);
         } else{
@@ -72,7 +72,7 @@ export  class EstudianteController {
         if(arregloEstudiante) {
             return response.send(
                 this.estudianteService.editarUno(
-                    params.id,
+                    params.id_estudiante,
                     body.nombres,
                     body.apellidos,
                     body.fechaNacimiento,

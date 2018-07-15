@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
       );
 
     const observableEstudiante$ = this._httpClient
-      .get('http://localhost:3000/Estudiante/mostrarEstudiantes');
+      .get('http://localhost:3000/Estudiante/mostrarEstudiante');
 
     observableEstudiante$
 
