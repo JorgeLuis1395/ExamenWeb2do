@@ -43,7 +43,7 @@
       <h2 align="center">Estudiante</h2>
       <div class="card">
         <div class="card-header">
-          Nombre Estudiante: {{estudiante[0].nombres}}
+          Nombre Estudiante: {{estudiante[estudiante.id_estudiante].nombres}}
         </div>
         <div class="card-body">
           <div class="row">
@@ -104,7 +104,8 @@
               <img class="img-fluid" [src]=materia[3].urlFotoMateria alt="No disponible">
             </div>
             <div class="col-sm-7">
-              <h5 class="card-title">Horas a la semana: {{materia[3].numeroHorasSemana}} </h5>
+              <h5 class="card-title">Horas a la semana: {{materia[3
+                ].numeroHorasSemana}} </h5>
               <p class="card-text">Detalle: {{materia[3].descripcion}}</p>
               <p class="card-text">Fecha Creacion: {{materia[3].fechaCreacion}}</p>
             </div>
@@ -143,9 +144,9 @@
         <div class="row"><h1></h1></div>
         <div class="row" align="center">
           <div class="col-sm-12" align="center">
-          <button type="button" class="btn btn-danger alert alert-waning" #rechazar="ngModel"  [(ngModel)]="button">Rechazar</button>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="button.touched">
-              <strong *ngIf="button.click()">Deseas Rechazar el Intercambio!</strong>
+          <button type="button" class="btn btn-danger alert alert-waning">Rechazar</button>
+            <div class="alert alert-warning alert-dismissible fade show" >
+              <strong *ngIf="button">Deseas Rechazar el Intercambio!</strong>
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>

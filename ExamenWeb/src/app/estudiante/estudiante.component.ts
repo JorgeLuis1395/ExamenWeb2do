@@ -19,7 +19,7 @@ export class EstudianteComponent implements OnInit {
   cargarMateria(){
     this._activetedRoute.params.subscribe(parametros=>{
       this._parametros=parametros;
-      this._httpClient.get('http://localhost:3000/materia/mostrarMateria?estudianteIdIdEstudiante='+this._parametros.idequipo)
+      this._httpClient.get('http://localhost:3000/materia/mostrarMateria?estudianteIdIdEstudiante='+this._parametros.idmateria)
         .subscribe(
           (res)=>{
             this.materia=res;
@@ -35,7 +35,7 @@ export class EstudianteComponent implements OnInit {
   cargarEstudiante(){
     this._activetedRoute.params.subscribe(parametros=>{
       this._parametros=parametros;
-      this._httpClient.get('http://localhost:3000/Estudiante/mostrarEstudiante?id='+this._parametros.idequipo)
+      this._httpClient.get('http://localhost:3000/Estudiante/mostrarEstudiante?id='+this._parametros.idmateria)
         .subscribe(
           (res)=>{
             this.estudiante=res;
