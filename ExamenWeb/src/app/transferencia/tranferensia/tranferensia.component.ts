@@ -53,6 +53,8 @@ export class TranferensiaComponent implements OnInit {
   rechazar(){
     alert("Deseas rechazar la solicitud")
   }
-
+ aceptar(){
+    alert("Intercambio Realizado")
+ }
 }
 

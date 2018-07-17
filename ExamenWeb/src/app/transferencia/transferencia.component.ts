@@ -8,6 +8,7 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./transferencia.component.css']
 })
 export class TransferenciaComponent implements OnInit {
+  mostrarcomponen
   estudiante;
   button;
   materia;
@@ -52,5 +53,9 @@ export class TransferenciaComponent implements OnInit {
 rechazar(){
     alert("Deseas rechazar la solicitud")
 }
+
+  aceptar(){
+    alert("Intercambio Realizado")
+  }
 
 }
