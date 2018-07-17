@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {CredencialesService} from "../servicios/credenciales.service";
+import {error} from "util";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,6 +10,7 @@ import {CredencialesService} from "../servicios/credenciales.service";
 export class LoginComponent implements OnInit {
   contrasena = '';
   usuario= '';
+  boton1= true;
   constructor(private _credencialesService: CredencialesService,
               private _router: Router,) { }
 
@@ -29,7 +31,7 @@ export class LoginComponent implements OnInit {
     else {
       const rutaHomeUsuario = [
         '/login',
-
+       alert("Login incorrecto")
       ];
       this._router.navigate(rutaHomeUsuario);
     }

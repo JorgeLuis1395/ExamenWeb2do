@@ -6,28 +6,52 @@
 
   <div class="col-sm-12" align="center">
     <br>
-    <p class="h3">PETICION DE TRANSFERENCIA</p>
+    <p class="titulo animated flash">PETICION DE TRANSFERENCIA</p>
   </div>
-  <div class="col-sm-3"></div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-header">
-        Nombre Estudiante: {{estudiante[0].nombres}}
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-sm-5">
-            <img class="img-fluid" [src]=estudiante[0].urlFotoEstudiante alt="No disponible">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="card">
+        <div class="card-header">
+          <h1> Usuario</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img class="img-fluid" height="150" width="150" src="https://i1.wp.com/www.cullar.es/wp-content/uploads/2017/06/simbolo-de-usuario-negro-macho_318-60703.jpg" alt="No disponible">
+            </div>
+            <div class="col-sm-7">
+              <h5 class="card-title">Usuario: carrillojorge1395@hormail.com</h5>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
+            </div>
           </div>
-          <div class="col-sm-7">
-            <h5 class="card-title">Fecha Nacimiento: {{estudiante[0].fechaNacimiento}} </h5>
-            <p class="card-text">Semestre Referencial: {{estudiante[0].semestreActual}}</p>
-            <p class="card-text">Graduado: {{estudiante[0].graduado}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-5">
+      <div class="card">
+        <div class="card-header"><h1 class="animated">Estudiante</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <img class="img-fluid" [src]=estudiante[6].urlFotoEstudiante alt="No disponible">
+            </div>
+            <div class="col-sm-7">
+              <h5 class="card-title">Nombre Estudiante: {{estudiante[6].nombres}} {{estudiante[6].apellidos}} </h5>
+              <p class="card-text">Semestre Referencial: {{estudiante[6].semestreActual}}</p>
+              <p class="card-text">Graduado: {{estudiante[6].graduado}}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="col-sm-3"></div>
+
   <div class="col-sm-3"></div>
 
   <div class="col-sm-12" ><br></div>

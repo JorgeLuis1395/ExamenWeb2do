@@ -1,6 +1,6 @@
 <div class="login-page">
 <div class="form">
-  <form class="login-form">
+  <form class="login-form" >
     <input type="text" name="usuario" placeholder="username@hotmail.com" [(ngModel)]="usuario" required
            pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" minlength="6" #emailInput="ngModel"/>
     <div
@@ -21,7 +21,15 @@
     </div>
     <input type="password" name="contrasena" placeholder="password" [(ngModel)]="contrasena"/>
     <button class="btn btn-block btn-primary"
-            (click)="login()">Login</button>
+            (click)="login()" [(ngModel)]="boton1" #boton="ngModel" (valid)="boton1==true">Login</button>
+    <div
+    class="alert alert-warning"
+    role="alert"
+    *ngIf="boton1==false">
+    <p>
+      Contraseña incorrecta
+    </p>
+    </div>
   </form>
 </div>
 </div>

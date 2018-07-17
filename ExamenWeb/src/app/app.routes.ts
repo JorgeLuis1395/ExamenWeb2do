@@ -5,6 +5,8 @@ import {ProfesorComponent} from "./profesor/profesor.component";
 import {EstudianteComponent} from "./estudiante/estudiante.component";
 import {TransferenciaComponent} from "./transferencia/transferencia.component";
 import {LoginComponent} from "./login/login.component";
+import {UsuarioComponent} from "./usuario/usuario.component";
+import {TranferensiaComponent} from "./transferencia/tranferensia/tranferensia.component";
 
 export const routes:Routes=[
   {path:'',redirectTo:'login',pathMatch:'full'},
@@ -13,6 +15,9 @@ export const routes:Routes=[
   {path:'estudiante/:idestudiante',component:EstudianteComponent},
   {path:'estudiante/:idestudiante/:materia/:idmateria',component:ProfesorComponent},
   {path:'transferencias',component:TransferenciaComponent},
+  {path:'usuario',component:UsuarioComponent},
+  {path:'transferensias',component:TranferensiaComponent},
+  {path:'usuario',component:UsuarioComponent},
 
 ];
 export const routing:ModuleWithProviders=RouterModule.forRoot(routes);

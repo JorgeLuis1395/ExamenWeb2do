@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute} from "@angular/router";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'app-transferencia',
-  templateUrl: './transferencia.component.html',
-  styleUrls: ['./transferencia.component.css']
+  selector: 'app-tranferensia',
+  templateUrl: './tranferensia.component.html',
+  styleUrls: ['./tranferensia.component.css']
 })
-export class TransferenciaComponent implements OnInit {
+export class TranferensiaComponent implements OnInit {
+
   estudiante;
   button;
   materia;
@@ -49,8 +50,9 @@ export class TransferenciaComponent implements OnInit {
         )
     });
   }
-rechazar(){
+  rechazar(){
     alert("Deseas rechazar la solicitud")
-}
+  }
 
 }
+

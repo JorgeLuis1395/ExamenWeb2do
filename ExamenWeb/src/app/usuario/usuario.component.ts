@@ -1,12 +1,12 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {ActivatedRoute} from "@angular/router";
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-usuario',
+  templateUrl: './usuario.component.html',
+  styleUrls: ['./usuario.component.css']
 })
-export class HomeComponent implements OnInit {
-
+export class UsuarioComponent implements OnInit {
   clickEnBuscar: EventEmitter<object> = new EventEmitter();
   estudiantes;
   materias;
@@ -99,9 +99,9 @@ export class HomeComponent implements OnInit {
     }
 
   }
-mostrarAnterior(){
+  mostrarAnterior(){
 
-}
+  }
 
 
 

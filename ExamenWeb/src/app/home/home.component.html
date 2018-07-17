@@ -28,11 +28,14 @@
           <div class="col-sm-4" *ngFor=" let nombre of arrayNombresUsuarios | search: searchText; let indice=index ">
             <div *ngFor="let usuario of usuarios">
               <div *ngIf="usuario.nombre_usuario==nombre && indice<=2">
+
                 <div class="card" [routerLink]="['/usuario',usuarios.id_usuario]">
-                  <div align="center" height="200" width="200"><img class="card-img-top img-fluid" style="width: 50%" [src]="usuario.urlFoto" height="200" width="200" alt="Card image cap"></div>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align: center">{{usuario.nombre_usuario}}
-                      </h5>
+                    </h5>
+                  <div align="center" height="200" width="200"><img class="card-img-top img-fluid" style="width: 50%" [src]="usuario.urlFoto" height="200" width="200" alt="Card image cap"></div>
+
+                    <h3 align="center"><a href="#" [routerLink]="['/usuario']" class="btn btn-primary">Visitar</a></h3>
                   </div>
                 </div>
               </div>
@@ -47,9 +50,9 @@
               <div *ngFor="let usuario of usuarios">
                 <div *ngIf="usuario.nombre_usuario==nombre && indice>2">
                   <div class="card" [routerLink]="['/usuario',usuarios.id_usuario]">
-                    <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]="usuario.urlFoto" alt="Card image cap"></div>
-
                     <h5 class="card-title" style="text-align: center">{{usuario.nombre_usuario}} </h5>
+                    <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]="usuario.urlFoto" alt="Card image cap"></div>
+                    <h3 align="center"><a href="#" [routerLink]="['/usuario']" class="btn btn-primary">Visitar</a></h3>
                   </div>
                 </div>
               </div>
@@ -63,7 +66,7 @@
               <div class="col-sm-1"></div>
               <div class="col-sm-3"><button  type="button" class="btn btn-info"  data-toggle="collapse" data-target="#demo"  >Anterior</button></div>
               <div class="col-sm-5"></div>
-              <div class="col-sm-3"><button (click)="mostrarAnterior" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Siguiente</button></div>
+              <div class="col-sm-3"><button  type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Siguiente</button></div>
             </div>
           </div>
 
@@ -141,6 +144,7 @@
                       <p class="card-title">Descripcion: {{materia.descripcion}}</p>
                       <p class="card-title">Numero Horas: {{materia.numeroHorasSemana}}</p>
                     </h5>
+                    <h3 align="center"><a href="http://localhost:4200/estudiante/1/materia/1']" class="btn btn-primary">Pedir Transferencia</a></h3>
                   </div>
                 </div>
               </div>
@@ -160,6 +164,7 @@
                     <p class="card-title">Nombre: {{materia.codigo}}</p>
                     <p class="card-title">Descripcion: {{materia.descripcion}}</p>
                     <p class="card-title">Numero Horas: {{materia.numeroHorasSemana}}</p>
+                    <h3 align="center"><a href="#" [routerLink]="['/transferencia']" class="btn btn-primary">Pedir Transferencia</a></h3>
                   </div>
                 </div>
               </div>
