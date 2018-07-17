@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f93c75ae-2630-45a4-9caf-0d023b7a2f3b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/transferencia/tramfesrencia/tramfesrencia.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/transferencia/tramfesrencia/tramfesrencia.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/transferencia/tranferensia/tranferensia.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/transferencia/tranferensia/tranferensia.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenWeb/src/app/transferencia/transferencia.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenWeb/src/app/transferencia/transferencia.component.html" afterDir="false" />
-    </list>
+    <list default="true" id="f93c75ae-2630-45a4-9caf-0d023b7a2f3b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -446,16 +442,15 @@
       <workItem from="1531662124812" duration="28478000" />
       <workItem from="1531774680793" duration="1761000" />
       <workItem from="1531781424737" duration="13693000" />
-      <workItem from="1531803436841" duration="861000" />
+      <workItem from="1531803436841" duration="885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85463000" />
+    <option name="totallyTimeSpent" value="85487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1230" y="23" width="1330" height="1337" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773243" visible="true" weight="0.30902255" />
